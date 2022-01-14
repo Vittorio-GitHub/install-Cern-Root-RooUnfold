@@ -60,9 +60,18 @@ tar -xzvf root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz
 source root/bin/thisroot.sh
 ```
 
-aggiungo in coda al file **.bashrc** (indicando il percorso di estrazione di root: /home/linus/Downloads)
+apro il file **.bashrc** (ad esempio con gedit)
 
 ```bash
+# torno alla home
+cd
+gedit .bashrc
+```
+
+aggiungo in coda: 
+
+```bash
+# indicando il percorso di estrazione di root: /home/linus/Downloads
 source /home/linus/Downloads/root/bin/thisroot.sh
 ```
 
