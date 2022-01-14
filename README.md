@@ -54,11 +54,13 @@ wget https://root.cern/download/root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.g
 Estraggo il file scaricato e lancio **thisroot.sh**
 
 ```bash
+#percorso dove ho scaricato i file (in questo caso /home/linus/Downloads)
+cd Downloads
 tar -xzvf root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz
 source root/bin/thisroot.sh
 ```
 
-aggiungo in coda al file **.bashrc** (indicando il percorso di estrazione di root)
+aggiungo in coda al file **.bashrc** (indicando il percorso di estrazione di root: /home/linus/Downloads)
 
 ```bash
 source /home/linus/Downloads/root/bin/thisroot.sh
@@ -67,11 +69,12 @@ source /home/linus/Downloads/root/bin/thisroot.sh
 ## RooUnfold
 
 ```bash
+#obbligatorio
 sudo apt install git
 ```
 
 ```bash
-# stesso percorso in cui ho estratto root
+# stesso percorso in cui ho estratto root (in questo caso /home/linus/Downloads)
 cd Downloads
 git clone https://gitlab.cern.ch/RooUnfold/RooUnfold.git
 cd RooUnfold
